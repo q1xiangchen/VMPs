@@ -34,7 +34,7 @@ MPII
     └── ...
 ```
 
-The original dataloader is modified to support the hdf5 format (in this demo we skip the validation set for simplicity). We have prepared the code in the [convert_h5.py](../../tools/convert_h5.py) script to convert the dataset to hdf5 format, where the final directory structure should look like the same as the original dataset structure but in one hdf5 file.
+The original dataloader is modified to support the hdf5 format *(in this demo we skip the validation set for simplicity)*. We have prepared the code in the [convert_h5.py](../../tools/convert_h5.py) script to convert the dataset to hdf5 format, where the final directory structure should look like the same as the original dataset structure but in one hdf5 file.
 
 
 
@@ -50,6 +50,8 @@ The original dataloader is modified to support the hdf5 format (in this demo we 
     path_to_video_N label_N
     ```
 
-2. Please put all annotation json files and the frame lists/videos under the same directory, then refer to the [convert_h5.py](../../tools/convert_h5.py) script to convert the dataset to hdf5 format.
+2. Please put all annotation json files and the frame lists or videos under the same directory, then refer to the [convert_h5.py](../../tools/convert_h5.py) script to convert the dataset to hdf5 format as the MPII-Cooking-2 dataset preparation above.
 
-3. Set `DATA.PATH_TO_DATA_DIR` to the appropriate path. Set `DATA.PATH_PREFIX` to be the path to the folder containing extracted frames.
+3. Set `DATA.PATH_TO_DATA_DIR` to the appropriate path. 
+
+4. Set `DATA.PATH_PREFIX` to be the path to the folder containing extracted frames accordingly.

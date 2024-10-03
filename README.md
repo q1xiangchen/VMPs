@@ -1,7 +1,7 @@
 # Video Motion Prompts
 
 <p align="center">
-  <img src="./fig/pipeline.png" width="600"/>
+  <img src="./fig/pipeline.png" width="900"/>
   <br>
   &nbsp&nbsp 🌺 <a href="https://q1xiangchen.github.io/motion-prompts/">Project Website</a> ｜ 📑 <a href="https://arxiv.org/abs/2407.03179">Paper</a> &nbsp&nbsp
 </p>

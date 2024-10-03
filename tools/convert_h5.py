@@ -32,16 +32,13 @@ def add_to_hdf5(group, path, update_groups=[]):
             add_to_hdf5(sub_group, file_path, update_groups)
         else:
             data = None
-            # Create a dataset in the current group for the file
+            # Read the file and store it in binary format
             if file_path.endswith('.jpg') or file_path.endswith('.png') or file_path.endswith('.gif'):
-                # Process as binary data
                 with open(file_path, 'rb') as f:
                     data = f.read()
             elif file_path.endswith('.json'):
-                # Process as JSON
                 with open(file_path, 'r') as f:
                     json_data = json.load(f)
-                # Convert to string for storage
                 json_str = json.dumps(json_data)
                 data = json_str.encode('utf-8')
             elif file_path.endswith('.txt'):
@@ -68,7 +65,7 @@ def add_to_hdf5(group, path, update_groups=[]):
 
 
 if __name__ == '__main__':
-    ################# Modify this section ####################
+    # ----------------- Modify this section ----------------- #
     # base path
     base_path = "/path/to/datasets/"
     # dataset path
@@ -86,8 +83,8 @@ if __name__ == '__main__':
         ALERT: every file will be rewritten!
         update_groups = [""] 
     """
-    update_groups = []
-    ##########################################################
+    update_groups = ["train", "test", "train.csv", "test.csv"]
+    # ----------------- Modify this section ----------------- #
 
     if not os.path.exists(save_path):
         hf = h5py.File(save_path, 'w')
@@ -96,7 +93,7 @@ if __name__ == '__main__':
     
     add_to_hdf5(hf, dataset_path, update_groups)
 
-    # print the groups
+    # logging groups in the file
     logging.basicConfig(filename="convert_h5.log", level=logging.INFO)
     logging.info("Groups in the file:")
     for group in hf:

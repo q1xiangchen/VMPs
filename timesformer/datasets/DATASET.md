@@ -1,19 +1,41 @@
 # Dataset Preparation
 
-## MPII
-
-The original dataloader is modified to support the hdf5 format. We have prepared the MPII-Cooking-2 (in hdf5 format) dataset and can be downloaded from [here](link_here).
-
-The structure of the dataset is as follows:
+## MPII-Cooking-2 Dataset
+The MPII-Cooking-2 dataset and can be downloaded from [here](https://www.mpi-inf.mpg.de/de/departments/computer-vision-and-machine-learning/research/human-activity-recognition/mpii-cooking-2-dataset). After downloading the dataset, the directory structure should look like this:
 ```
-MPII.h5/
-    train.csv
-    test.csv
-    video/
-        xxxx.mp4
-        yyyy.mp4
-        ...
+.
+├── experimentalSetup
+├── videos
+│   ├── s07-d72-cam-002.avi
+│   └── ...
+└── attributesAnnotations_MPII-Cooking-2.mat
 ```
+We have provided the [mpii_split.py](./mpii_split.py) script to split the dataset into training, validation, and testing set. The script will generate the following directory structure:
+
+```
+MPII
+├── train.csv
+├── test.csv
+├── train
+│   ├── addV
+│   │   ├── s22-d26-cam-002_8666.mp4
+│   │   ├── s22-d26-cam-002_8711.mp4
+│   │   └── ...
+|   ├── arrangeV
+│   │   ├── s28-d51-cam-002_2860.mp4
+│   │   ├── s28-d51-cam-002_3142.mp4
+│   │   └── ...
+│   └── ...
+└── test
+    ├── addV
+    │   ├── s08-d02-cam-002_5200.mp4
+    │   ├── s08-d02-cam-002_5260.mp4
+    │   └── ...
+    └── ...
+```
+
+The original dataloader is modified to support the hdf5 format (in this demo we skip the validation set for simplicity). We have prepared the code in the [convert_h5.py](../../tools/convert_h5.py) script to convert the dataset to hdf5 format, where the final directory structure should look like the same as the original dataset structure but in one hdf5 file.
+
 
 
 ## Other Datasets

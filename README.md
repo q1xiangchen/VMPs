@@ -8,7 +8,7 @@
 <p align="center">
   <img src="./fig/pipeline.png" width="600"/>
   <br>
-  &nbsp&nbsp 🌺 <a href="https://q1xiangchen.github.io/motion-prompts/">Project Websit</a> ｜ 📑 <a href="https://arxiv.org/abs/2407.03179">Paper</a> &nbsp&nbsp
+  &nbsp&nbsp 🌺 <a href="https://q1xiangchen.github.io/motion-prompts/">Project Website</a> ｜ 📑 <a href="https://arxiv.org/abs/2407.03179">Paper</a> &nbsp&nbsp
 </p>
 
 This is an official pytorch implementation of our ACML 2024 paper [Motion meets Attention: Video Motion Prompts](https://arxiv.org/abs/2407.03179). In this repository, we provide PyTorch code for training and testing our video motion prompts (VMPs) layer with TimeSformer model. 
@@ -47,6 +47,7 @@ cd VMPs
 | Model | Pretrained dataset | Fine-tuned dataset | Link |
 | --- | --- | --- | --- |
 | TimeSformer | Kinetics-600 | - | [Download](link_here) |
+| TimeSformer | Kinetics-600 | MPII-Cooking-2 | [Download](link_here) |
 | **VMPs** + TimeSformer | Kinetics-600 | MPII-Cooking-2 | [Download](link_here) |
 
 ## 🗂️ Dataset Preparation
@@ -78,7 +79,7 @@ url={https://openreview.net/forum?id=nIDAT99Vhb}
 ```
 
 
-# 📣 Acknowledgements
+# 📣 Acknowledgment
 
 Qixiang Chen conducted this research under the supervision of Lei Wang for his final year honors research project at ANU. He is a recipient of research sponsorship from Active Intelligence Australia Pty Ltd in Perth, Western Australia, including The Active Intelligence Research Challenge Award. This work was also supported by the NCI Adapter Scheme Q4 2023, the NCI National AI Flagship Merit Allocation Scheme, and the National Computational Merit Allocation Scheme 2024 (NCMAS 2024), with computational resources provided by NCI Australia, an NCRIS-enabled capability supported by the Australian Government.
 

@@ -791,7 +791,7 @@ _C.WANDB = CfgNode()
 _C.WANDB.ENABLE = False
 
 _C.VMPS = CfgNode()
-_C.VMPS.EXP_NAME = 'baseline'
+_C.VMPS.EXP_NAME = "baseline"
 _C.VMPS.PENALTY_WEIGHT = 0.0
 ### ---------------------------------------------- ###
 

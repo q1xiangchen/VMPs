@@ -55,7 +55,7 @@ To train and test the VMPs layer with TimeSformer model, please refer to the ins
 | ----- | ------------------ | ------------------ | ---- |
 | TimeSformer | Kinetics-600 | - | [Download](https://drive.google.com/file/d/1azYHGUqTW3_-V09tk_r5QRwmlHgcLUNT/view?usp=sharing) |
 | TimeSformer | Kinetics-600 | MPII-Cooking-2 | [Download](https://drive.google.com/file/d/11pJg30COO7hWniRzLlGrlF7u5XoEGVTX/view?usp=sharing) |
-| **VMPs** + TimeSformer | Kinetics-600 | MPII-Cooking-2 | [Download](https://drive.google.com/file/d/1K_l7wFeWf-t76IXreCQ_UFJxwT266s6g/view?usp=sharing) |
+| **VMPs** + TimeSformer | Kinetics-600 | MPII-Cooking-2 | [Download](https://drive.google.com/file/d/10eXvXbVGSaA5mPEL1Cn8Q6eaAZgJTkjP/view?usp=sharing) |
 
 
 # 🌼 License

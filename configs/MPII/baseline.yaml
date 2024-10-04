@@ -42,7 +42,7 @@ DATA_LOADER:
 NUM_GPUS: 2
 NUM_SHARDS: 1
 RNG_SEED: 0
-OUTPUT_DIR: ./results/MPII/baseline_finetune
+OUTPUT_DIR: ./results/MPII/baseline
 VMPS:
   EXP_NAME: baseline
 WANDB:

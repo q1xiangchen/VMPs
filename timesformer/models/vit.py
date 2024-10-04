@@ -327,7 +327,7 @@ class vit_base_patch16_224(nn.Module):
         # VMPs configuration
         num_frames = cfg.DATA.NUM_FRAMES
         if cfg.VMPS.EXP_NAME != "baseline":
-            self.vmps = VideoMotionPrompt(exp_name=cfg.VMPS.EXP_NAME)
+            self.vmps = VideoMotionPrompt(penalty_weight=cfg.VMPS.PENALTY_WEIGHT, wandb=cfg.WANDB.ENABLE)
             num_frames -= 1
         self.model = VisionTransformer(img_size=cfg.DATA.TRAIN_CROP_SIZE, num_classes=cfg.MODEL.NUM_CLASSES, patch_size=patch_size, embed_dim=768, depth=12, num_heads=12, mlp_ratio=4, qkv_bias=True, norm_layer=partial(nn.LayerNorm, eps=1e-6), drop_rate=0., attn_drop_rate=0., drop_path_rate=0.1, num_frames=num_frames, attention_type=cfg.TIMESFORMER.ATTENTION_TYPE, **kwargs)
 

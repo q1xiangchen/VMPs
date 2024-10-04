@@ -59,7 +59,7 @@ To finetune the TimeSformer with VMPs, you can use the following command:
 python tools/run_net.py \
   --cfg configs/MPII/VMPs.yaml \
   DATA.PATH_TO_DATA_DIR path_to_your_dataset \
-  TRAIN.CHECKPOINT_FILE_PATH path_to_your_PyTorch_checkpoint \
+  TRAIN.CHECKPOINT_FILE_PATH path_to_your_checkpoint \
 ``` 
 **NOTE:** The `DATA.NUM_FRAMES` entry in the configuration file should be **increased by 1** for VMPs layer. Also, set the appropriate `VMPS.EXP_NAME` and `VMPS.PENALTY_WEIGHT` for hyperparameter tuning.
 

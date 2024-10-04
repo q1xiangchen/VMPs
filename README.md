@@ -17,20 +17,24 @@ This repository contains the official PyTorch implementation of our ACML 2024 pa
 git clone git@github.com:q1xiangchen/VMPs.git
 cd VMPs
 ```
-2. Install the required dependencies below (or refer to [environment.yml](environment.yml)):
+2. Install the required dependencies below (refer to [environment.yml](environment.yml) or [requirements.txt](requirements.txt) for more details):
 
-- torchvision: `pip install torchvision` or `conda install torchvision -c pytorch`
-- [fvcore](https://github.com/facebookresearch/fvcore/): `pip install 'git+https://github.com/facebookresearch/fvcore'`
-- simplejson: `pip install simplejson`
-- einops: `pip install einops`
-- timm: `pip install timm`
-- PyAV: `conda install av -c conda-forge`
-- psutil: `pip install psutil`
-- scikit-learn: `pip install scikit-learn`
-- OpenCV: `pip install opencv-python`
-- tensorboard: `pip install tensorboard`
-- wandb: `pip install wandb`
-- h5py: `pip install h5py`
+- Basic dependencies:
+  - python >= 3.7
+  - pytorch >= 1.8.1
+- Required packages:
+  - torchvision: `pip install torchvision` or `conda install torchvision -c pytorch`
+  - [fvcore](https://github.com/facebookresearch/fvcore/): `pip install 'git+https://github.com/facebookresearch/fvcore'`
+  - simplejson: `pip install simplejson`
+  - einops: `pip install einops`
+  - timm: `pip install timm`
+  - PyAV: `conda install av -c conda-forge`
+  - psutil: `pip install psutil`
+  - scikit-learn: `pip install scikit-learn`
+  - OpenCV: `pip install opencv-python`
+  - tensorboard: `pip install tensorboard`
+  - wandb: `pip install wandb`
+  - h5py: `pip install h5py`
 
 3. Lastly, build the TimeSformer codebase by running:
   ```

@@ -1,3 +1,7 @@
 datasets
+ckpts
 build/*
 timesformer.egg-info/*
+ckpt/
+results/*
+*__pycache__

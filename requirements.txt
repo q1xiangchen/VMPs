@@ -1,0 +1,22 @@
+--extra-index-url https://download.pytorch.org/whl/cu102
+# PyTorch and related libraries from specific channels
+torch==1.8.1+cu102 -f https://download.pytorch.org/whl/torch_stable.html
+torchvision==0.9.1+cu102 -f https://download.pytorch.org/whl/torch_stable.html
+torchaudio==0.8.1
+
+# Basic dependencies
+av
+einops
+h5py
+numpy
+matplotlib
+opencv-python
+psutil
+scikit-learn
+simplejson
+tensorboard
+timm
+wandb
+
+# Install from GitHub
+git+https://github.com/facebookresearch/fvcore

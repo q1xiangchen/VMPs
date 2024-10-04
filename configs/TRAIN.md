@@ -1,6 +1,9 @@
 # 🌱 Baseline TimeSformer
 
 Please refer to the [README.md](../README.md) for installation instructions, dataset preparation and model checkpoints.
+> * For all experiments, we recommend editing the configuration files in [`configs/`](./) to suit your needs. 
+> * We also provide the option to use **wandb** for logging. To enable wandb, set `WANDB.ENABLE True` in the configuration file, or you can use the original tensorboard logging and set `WANDB.ENABLE False`.
+
 
 ## Training the Default TimeSformer
 
@@ -22,8 +25,6 @@ DATA:
 
 To the yaml configs file, then you do not need to pass it to the command line every time.
 
-> * For all experiments, we recommend editing the configuration files in [`configs/`](./) to suit your needs. 
-> * We also provide the option to use **wandb** for logging. To enable wandb, set `WANDB.ENABLE True` in the configuration file, or you can use the original tensorboard logging and set `WANDB.ENABLE False`.
 
 ## Using a Different Number of GPUs
 

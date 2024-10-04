@@ -1,4 +1,4 @@
-# 🔑 Baseline TimeSformer
+# 🌱 Baseline TimeSformer
 
 Please refer to the [README.md](../README.md) for installation instructions, dataset preparation and model checkpoints.
 
@@ -23,7 +23,7 @@ DATA:
 To the yaml configs file, then you do not need to pass it to the command line every time.
 
 > * For all experiments, we recommend editing the configuration files in [`configs/`](./) to suit your needs. 
-> * We also provide the option to use wandb for logging. To enable wandb, add `WANDB.ENABLE True` to the configuration file.
+> * We also provide the option to use **wandb** for logging. To enable wandb, set `WANDB.ENABLE True` in the configuration file, or you can use the original tensorboard logging and set `WANDB.ENABLE False`.
 
 ## Using a Different Number of GPUs
 
@@ -61,7 +61,7 @@ python tools/run_net.py \
   DATA.PATH_TO_DATA_DIR path_to_your_dataset \
   TRAIN.CHECKPOINT_FILE_PATH path_to_your_checkpoint \
 ``` 
-**NOTE:** The `DATA.NUM_FRAMES` entry in the configuration file should be **increased by 1** for VMPs layer. Also, set the appropriate `VMPS.EXP_NAME` and `VMPS.PENALTY_WEIGHT` for hyperparameter tuning.
+**NOTE:** The `DATA.NUM_FRAMES` entry in the configuration file should be **increased by 1** for VMPs layer. Additionally, set the appropriate values for `VMPS.EXP_NAME` and `VMPS.PENALTY_WEIGHT` for hyperparameter tuning. Please note that the VMPs layer will not be used if `VMPS.EXP_NAME` is set to `"Baseline"`.
 
 ## Inference with VMPs
 

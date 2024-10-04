@@ -14,7 +14,7 @@ python tools/run_net.py \
   --cfg configs/MPII/baseline.yaml \
   DATA.PATH_TO_DATA_DIR path_to_your_dataset \
   NUM_GPUS 2 \
-  TRAIN.BATCH_SIZE 4 \
+  TRAIN.BATCH_SIZE 8 \
 ```
 You may need to pass location of your dataset in the command line by adding `DATA.PATH_TO_DATA_DIR path_to_your_dataset`, or you can simply add
 
@@ -46,7 +46,7 @@ python tools/run_net.py \
 To finetune from an existing PyTorch checkpoint add the following line in the command line, or you can also add it in the YAML config:
 
 ```
-TRAIN.CHECKPOINT_FILE_PATH path_to_your_PyTorch_checkpoint
+TRAIN.CHECKPOINT_FILE_PATH path_to_your_checkpoint
 TRAIN.FINETUNE True
 ```
 

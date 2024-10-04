@@ -42,7 +42,7 @@ cd VMPs
   ```
 
 
-## 🪷 Dataset Preparation
+## 🪴 Dataset Preparation
 Please use the dataset preparation instructions provided in [DATASET.md](timesformer/datasets/DATASET.md).
 
 
@@ -54,7 +54,7 @@ To train and test the VMPs layer with TimeSformer model, please refer to the ins
 | Model | Pretrained dataset | Fine-tuned dataset | Link |
 | ----- | ------------------ | ------------------ | ---- |
 | TimeSformer | Kinetics-600 | - | [Download](https://drive.google.com/file/d/1azYHGUqTW3_-V09tk_r5QRwmlHgcLUNT/view?usp=sharing) |
-| TimeSformer | Kinetics-600 | MPII-Cooking-2 | [Download](https://drive.google.com/file/d/11pJg30COO7hWniRzLlGrlF7u5XoEGVTX/view?usp=sharing) |
+| TimeSformer (Baseline) | Kinetics-600 | MPII-Cooking-2 | [Download](https://drive.google.com/file/d/11pJg30COO7hWniRzLlGrlF7u5XoEGVTX/view?usp=sharing) |
 | **VMPs** + TimeSformer | Kinetics-600 | MPII-Cooking-2 | [Download](https://drive.google.com/file/d/10eXvXbVGSaA5mPEL1Cn8Q6eaAZgJTkjP/view?usp=sharing) |
 
 

@@ -72,7 +72,7 @@ class VideoMotionPrompt(torch.nn.Module):
         repeat_attention_map = attention_map.unsqueeze(2).repeat(1, 1, 3, 1, 1)
 
         ### temporal attention variation regularization ###
-        loss = 0
+        loss, temporal_loss = 0, 0
         if torch.is_grad_enabled():
             temp_diff = attention_map[:, 1:] - attention_map[:, :-1]
             temporal_loss = torch.sum(temp_diff.pow(2)) / (H*W*(T-2)*B)

@@ -82,13 +82,3 @@ url={https://openreview.net/forum?id=nIDAT99Vhb}
 Qixiang Chen conducted this research under the supervision of Lei Wang for his final year honors research project at ANU. He is a recipient of research sponsorship from Space Zero Investments Pty Ltd in Perth, Western Australia, including The Active Intelligence Research Challenge Award. This work was also supported by the NCI Adapter Scheme Q4 2023, the NCI National AI Flagship Merit Allocation Scheme, and the National Computational Merit Allocation Scheme 2024 (NCMAS 2024), with computational resources provided by NCI Australia, an NCRIS-enabled capability supported by the Australian Government.
 
 This codebase is built on top of [TimeSformer](https://github.com/facebookresearch/TimeSformer) of facebookresearch, and we thank the authors for their work. 
-
-```
-@inproceedings{gberta_2021_ICML,
-    author  = {Gedas Bertasius and Heng Wang and Lorenzo Torresani},
-    title = {Is Space-Time Attention All You Need for Video Understanding?},
-    booktitle   = {Proceedings of the International Conference on Machine Learning (ICML)}, 
-    month = {July},
-    year = {2021}
-}
-```
